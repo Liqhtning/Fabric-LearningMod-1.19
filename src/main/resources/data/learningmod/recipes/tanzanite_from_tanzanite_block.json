@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "tanzanite",
+  "ingredients": [
+    {
+      "item": "learningmod:tanzanite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "learningmod:tanzanite"
+  }
+}

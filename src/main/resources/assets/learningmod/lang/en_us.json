@@ -1,0 +1,12 @@
+{
+  "item.learningmod.raw_tanzanite": "Raw Tanzanite",
+  "item.learningmod.tanzanite": "Tanzanite",
+
+  "block.learningmod.tanzanite_block": "Block of Tanzanite",
+  "block.learningmod.tanzanite_ore": "Tanzanite Ore",
+  "block.learningmod.deepslate_tanzanite_ore": "Deepslate Tanzanite Ore",
+  "block.learningmod.netherrack_tanzanite_ore": "Netherrack Tanzanite Ore",
+  "block.learningmod.endstone_tanzanite_ore": "Endstone Tanzanite Ore",
+
+  "itemGroup.learningmod.tanzanite": "Tanzanite Tab"
+}
