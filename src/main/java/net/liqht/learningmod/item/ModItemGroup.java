@@ -7,6 +7,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static final ItemGroup TANZANITE = FabricItemGroupBuilder.build(
-            new Identifier(LearningMod.MOD_ID, "tanzanite"), () -> new ItemStack(ModItems.TANZANITE));
+    public static final ItemGroup CUSTOM_ITEMS = FabricItemGroupBuilder.build(
+            new Identifier(LearningMod.MOD_ID, "custom_items"), () -> new ItemStack(ModItems.TANZANITE));
 }

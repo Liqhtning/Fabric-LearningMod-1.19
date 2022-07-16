@@ -3,6 +3,9 @@ package net.liqht.learningmod.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.liqht.learningmod.LearningMod;
+import net.liqht.learningmod.block.custom.JumpyBlock;
+import net.liqht.learningmod.block.custom.TanzaniteFurnaceBlock;
+import net.liqht.learningmod.block.custom.TanzaniteLampBlock;
 import net.liqht.learningmod.item.ModItemGroup;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
@@ -18,27 +21,40 @@ public class ModBlocks {
 
     // Block of Tanzanite
     public static final Block TANZANITE_BLOCK = registerBlock("tanzanite_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.TANZANITE);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.CUSTOM_ITEMS);
 
     // Tanzanite Ore
     public static final Block TANZANITE_ORE = registerBlock("tanzanite_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
-                    UniformIntProvider.create(3, 7)), ModItemGroup.TANZANITE);
+                    UniformIntProvider.create(3, 7)), ModItemGroup.CUSTOM_ITEMS);
 
     // Deepslate Tanzanite Ore
     public static final Block DEEPSLATE_TANZANITE_ORE = registerBlock("deepslate_tanzanite_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
-                    UniformIntProvider.create(3, 7)), ModItemGroup.TANZANITE);
+                    UniformIntProvider.create(3, 7)), ModItemGroup.CUSTOM_ITEMS);
 
     // Netherrack Tanzanite Ore
     public static final Block NETHERRACK_TANZANITE_ORE = registerBlock("netherrack_tanzanite_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
-                    UniformIntProvider.create(3, 7)), ModItemGroup.TANZANITE);
+                    UniformIntProvider.create(3, 7)), ModItemGroup.CUSTOM_ITEMS);
 
     // Endstone Tanzanite Ore
     public static final Block ENDSTONE_TANZANITE_ORE = registerBlock("endstone_tanzanite_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
-                    UniformIntProvider.create(3, 7)), ModItemGroup.TANZANITE);
+                    UniformIntProvider.create(3, 7)), ModItemGroup.CUSTOM_ITEMS);
+
+    // Jumpy Block
+    public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
+            new JumpyBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.CUSTOM_ITEMS);
+
+    // Tanzanite Lamp
+    public static final Block TANZANITE_LAMP = registerBlock("tanzanite_lamp",
+            new TanzaniteLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
+                    .luminance(state -> state.get(TanzaniteLampBlock.LIT) ? 15 : 0)), ModItemGroup.CUSTOM_ITEMS);
+
+    // Tanzanite Furnace
+    public static final Block TANZANITE_FURNACE = registerBlock("tanzanite_furnace",
+            new TanzaniteFurnaceBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.CUSTOM_ITEMS);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {

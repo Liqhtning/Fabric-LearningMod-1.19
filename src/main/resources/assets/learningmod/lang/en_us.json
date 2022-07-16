@@ -1,12 +1,18 @@
 {
   "item.learningmod.raw_tanzanite": "Raw Tanzanite",
   "item.learningmod.tanzanite": "Tanzanite",
+  "item.learningmod.eight_ball": "Eight Ball",
 
   "block.learningmod.tanzanite_block": "Block of Tanzanite",
   "block.learningmod.tanzanite_ore": "Tanzanite Ore",
   "block.learningmod.deepslate_tanzanite_ore": "Deepslate Tanzanite Ore",
   "block.learningmod.netherrack_tanzanite_ore": "Netherrack Tanzanite Ore",
   "block.learningmod.endstone_tanzanite_ore": "Endstone Tanzanite Ore",
+  "block.learningmod.jumpy_block": "Jumpy Block",
+  "block.learningmod.tanzanite_lamp": "Tanzanite Lamp",
+  "block.learningmod.tanzanite_furnace": "Tanzanite Furnace",
 
-  "itemGroup.learningmod.tanzanite": "Tanzanite Tab"
+  "entity.minecraft.villager.jumpmaster": "Jump Masters",
+
+  "itemGroup.learningmod.custom_items": "Custom Items"
 }
